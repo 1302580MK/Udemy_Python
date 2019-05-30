@@ -2,6 +2,15 @@
 
 print("Input Output Stuff")
 
+
+import os
+
+#be careful where to place it
+
+os.mkdir("FolderCreatedWithOs.Mkdir")
+#os.rename("PythonTestFile.txt", "newfile.txt")
+os.rename("newfile.txt", "PythonTestFile.txt")
+
 #var1 = input("Enter something please: ")
 
 #print(var1)
@@ -39,7 +48,7 @@ print(string5.decode('ascii')) # success!
 # need to close and reopen to get the whole stream
 var2.close()
 var2 = open("PythonTestFile.txt","r")
-print(var2.read())
+#print(var2.read())
 
 # ah - blitzlicht
 var2.close()
@@ -56,3 +65,5 @@ stringwithcontent += " do crazy stuff"
 
 # flushing
 var2.close()
+
+
